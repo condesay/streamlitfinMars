@@ -119,7 +119,7 @@ def main():
 		message = st.text_area("Entrez le Texte à identifier","Tapez Ici...")
 		if st.button("Analyse"):
 			blob = TextBlob(message)
-			result_sentiment = blob.sentiment.polarity
+			result_sentiment = blob.sentiment
 			if result_sentiment > 0:
                            st.success("Positif")
 			elif result_sentiment < 0:
