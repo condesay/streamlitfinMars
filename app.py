@@ -124,9 +124,7 @@ def main():
                            st.success("Positif")
 			elif result_sentiment < 0:
                            st.error("Négatif")
-                        else:
-                           st.info("Neutre")
-
+                        
 	# Entity Extraction
 	if st.checkbox("Trouvez les  Entités de noms dans votre texte"):
 		st.subheader("Identification des Entités dans votre texte")
